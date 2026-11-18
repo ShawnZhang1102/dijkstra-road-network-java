@@ -32,10 +32,10 @@ Pick a start and an end point in the GUI to see the shortest path drawn on the m
 | `Node.java` | Graph node (intersection, with coordinates) |
 | `Edge.java` | Graph edge (road) |
 | `Dijkstra.java` | Dijkstra's shortest-path algorithm |
-| `nys.txt` | New York State road network data (35 MB) |
+| `nys.txt.gz` | New York State road network data (35 MB uncompressed — run `gunzip nys.txt.gz` to restore `nys.txt`) |
 | `monroe.txt` | Monroe County road network data |
 | `ur.txt` | University of Rochester campus road data |
 
 ## Data Note
 
-The program reads its map data from the `.txt` files above. `nys.txt` is the full New York State road network, which is why the repository is larger than a typical code project.
+The program reads its map data from the `.txt` files above. `nys.txt` is the full New York State road network, which is why the repository is larger than a typical code project. It is stored here as `nys.txt.gz` because GitHub's web upload caps files at 25 MB — run `gunzip nys.txt.gz` after cloning to restore `nys.txt` (35 MB, under GitHub's 100 MB per-file limit for git pushes).
